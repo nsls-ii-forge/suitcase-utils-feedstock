@@ -1,0 +1,39 @@
+{% set name = "suitcase-utils" %}
+{% set version = "0.5.0" %}
+
+package:
+  name: "{{ name|lower }}"
+  version: "{{ version }}"
+
+source:
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 8264ee1dbafa105df78162205b3e71b6d637fa82dbd28507a91d6d0fd440365d
+
+build:
+  number: 0
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
+
+requirements:
+  host:
+    - pip
+    - python
+  run:
+    - python
+
+test:
+  imports:
+    - suitcase.utils
+    - suitcase.utils.tests
+
+about:
+  home: https://blueskyproject.io/suitcase
+  license: BSD (3-clause)
+  license_family: BSD
+  license_file: 
+  summary: Utility functions and test fixtures for suitcase-* packages
+  doc_url: https://blueskyproject.io/suitcase
+  dev_url: https://github.com/bluesky/{{ name }}
+
+extra:
+  recipe-maintainers:
+    - NSLS-II
