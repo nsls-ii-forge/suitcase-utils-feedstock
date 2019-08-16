@@ -1,1 +1,19 @@
-[]
+github:
+  user_or_org: nsls-ii-forge
+channels:
+  sources:
+  - nsls2forge
+  - defaults
+  targets:
+  - [nsls2forge, main]
+azure:
+  user_or_org: nsls2forge
+  project_name: nsls2forge
+provider:
+  linux: azure
+  osx: azure
+  win: azure
+upload_on_branch: master
+travis:
+  secure:
+    BINSTAR_TOKEN: tnz73aln1HAgBVSxBdPhUlYnOek4tsygqP7ydB0xaOGvPOI10LUh48lOGrW+q3XiZ7+uGja4Zdtl2akDUjHx4jKsfy56xV02BxNd+11Fp/nVirdbptjqqKk9luWUHAajPsfPjjCp/4w9YSjAJNz7o8I1ATuudwekAfLqQo1gWj4FIX7cTX+aXfTnnH4HdVv2FUVhWQkq6JGU4YXga4uBiSkFBsW3SscAxJvva1m489UKzhpd9hV0N/H2x8hmNLV9zBtRXwnEbAYntRR2z/z1gvNIfvLtsPxdtZNISiuNc/pqHZGk3YMCA44HZInRmeh4RKb3BWo6LXCRZZB1QkwvPDhIgIL+ZEo07DCfRQz0MT0KesuUYXjVrLF0EtpWGKF04sYXh1WGxPX2Z+A34ROmFjYPJmvHvG29RMDCXeipzRr4ZfbxOD/ZKkWmJgeIUEK2gyyQcfWi0loOWDE/W6U/VK8Uxb7onSN4PAbX+5kR0mM9bFH6febSWp3roypyjtMxjI2VLHjjd6nd/algw95hoRAobqsr2TnEiCaGBnVtjK2ASbL/xkTuAyipyAcJrclVtc1L448sc5Tz47DyXWkE1dUmfQtoJgsTUh+hYXo8bq3bNks+DDE3VnX5E0mnGia9tWGlM9ReXZ6XD5EekMnmRbpvRV156bQYhBsGxf21p/s=
