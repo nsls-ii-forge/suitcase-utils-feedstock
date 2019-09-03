@@ -30,7 +30,7 @@ about:
   home: https://blueskyproject.io/suitcase
   license: BSD (3-clause)
   license_family: BSD
-  license_file: 
+  license_file: LICENSE
   summary: Utility functions and test fixtures for suitcase-* packages
   doc_url: https://blueskyproject.io/suitcase
   dev_url: https://github.com/bluesky/suitcase-utils
