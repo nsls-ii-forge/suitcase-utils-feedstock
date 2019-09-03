@@ -11,13 +11,13 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 2
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
 
 requirements:
   host:
-    - pip
     - python
+    - pip
   run:
     - python
 
@@ -33,8 +33,4 @@ about:
   license_file: 
   summary: Utility functions and test fixtures for suitcase-* packages
   doc_url: https://blueskyproject.io/suitcase
-  dev_url: https://github.com/bluesky/{{ name }}
-
-extra:
-  recipe-maintainers:
-    - NSLS-II
+  dev_url: https://github.com/bluesky/suitcase-utils
