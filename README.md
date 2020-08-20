@@ -5,7 +5,7 @@ Home: https://blueskyproject.io/suitcase
 
 Package license: BSD (3-clause)
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Utility functions and test fixtures for suitcase-* packages
 
