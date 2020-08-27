@@ -13,7 +13,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -25,11 +25,10 @@ requirements:
 test:
   imports:
     - suitcase.utils
-    - suitcase.utils.tests
 
 about:
   home: https://blueskyproject.io/suitcase
-  license: BSD (3-clause)
+  license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
   summary: Utility functions and test fixtures for suitcase-* packages
