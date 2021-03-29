@@ -1,6 +1,6 @@
 {% set name = "suitcase-utils" %}
-{% set version = "0.5.3" %}
-{% set sha256 = "dfef82994c3e73b6cbd59d249a0c66afe056246956cfb1e931db4ca99631c6b7" %}
+{% set version = "0.5.4" %}
+{% set sha256 = "5c3fee0896d1ebf89d1a7b41198a14a09866065c62fe17adbb1cf1c15d636d89" %}
 
 package:
   name: {{ name|lower }}
